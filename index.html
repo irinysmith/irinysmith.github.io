@@ -200,7 +200,7 @@
         <a href="#clips" class="nav-link">Клипы</a>
         <a href="#booktrailers" class="nav-link">Буктрейлеры</a>
         <a href="#series" class="nav-link">Сериалы</a>
-        <a href="#audio" class="nav-link">Озвучка и звук</a>
+        <a href="#voiceover" class="nav-link">Озвучка и звук</a>
         <a href="#pricing" class="nav-link">Прайс</a>
         <a href="#contacts" class="nav-link">Контакты</a>
       </nav>
@@ -226,7 +226,7 @@
         <a href="#clips" class="mobile-nav-link py-3 px-3 rounded-lg hover:bg-gold/10 hover:text-goldLight transition-colors">Клипы</a>
         <a href="#booktrailers" class="mobile-nav-link py-3 px-3 rounded-lg hover:bg-gold/10 hover:text-goldLight transition-colors">Буктрейлеры</a>
         <a href="#series" class="mobile-nav-link py-3 px-3 rounded-lg hover:bg-gold/10 hover:text-goldLight transition-colors">Сериалы</a>
-        <a href="#audio" class="mobile-nav-link py-3 px-3 rounded-lg hover:bg-gold/10 hover:text-goldLight transition-colors">Озвучка и звук</a>
+        <a href="#voiceover" class="mobile-nav-link py-3 px-3 rounded-lg hover:bg-gold/10 hover:text-goldLight transition-colors">Озвучка и звук</a>
         <a href="#pricing" class="mobile-nav-link py-3 px-3 rounded-lg hover:bg-gold/10 hover:text-goldLight transition-colors">Прайс и калькулятор</a>
         <a href="#contacts" class="mobile-nav-link py-3 px-3 rounded-lg hover:bg-gold/10 hover:text-goldLight transition-colors">Контакты</a>
         <a href="#contacts" class="mobile-nav-link mt-3 py-3.5 px-4 rounded-xl text-center bg-gradient-to-r from-gold to-bronze text-obsidian font-semibold">
@@ -374,7 +374,7 @@
           </div>
           <div class="rounded-xl border border-gold/15 bg-charcoal/60 px-5 py-4">
             <div class="font-display text-2xl sm:text-3xl font-semibold text-goldLight">Под ключ со звуком</div>
-            <div class="text-xs sm:text-sm text-ash mt-1">Живая актёрская озвучка, атмосферный саундтрек и SFX в одном окне</div>
+            <div class="text-xs sm:text-sm text-ash mt-1">Студийная AI-озвучка, атмосферный саундтрек и SFX в одном окне</div>
           </div>
           <div class="rounded-xl border border-gold/15 bg-charcoal/60 px-5 py-4">
             <div class="font-display text-2xl sm:text-3xl font-semibold text-goldLight">Без VPN и сложностей</div>
@@ -387,493 +387,279 @@
     <div class="gold-hairline max-w-6xl mx-auto"></div>
 
     <!-- ======================================================================
-         3. МУЗЫКАЛЬНЫЕ КЛИПЫ — АКЦЕНТ НА «ШИКО» (id="clips")
+         6. ОЗВУЧКА И ЗВУК (id="voiceover")
          ====================================================================== -->
-    <section id="clips" class="py-20 sm:py-28">
+    <section id="voiceover" class="py-20 sm:py-28 bg-gradient-to-b from-obsidian via-[#100e12] to-obsidian">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12 reveal">
-          <div>
-            <p class="text-xs uppercase tracking-[0.26em] text-gold font-semibold">МУЗЫКАЛЬНЫЕ КЛИПЫ И СНИППЕТЫ</p>
-            <h2 class="mt-3 font-display text-3xl sm:text-5xl font-semibold text-parchment leading-tight">
-              Визуальные миры для рок-, фолк- и&nbsp;фэнтези-музыки
-            </h2>
-          </div>
-          <p class="text-sm sm:text-base text-ash max-w-md leading-relaxed">
-            Замки, костюмы, таверны и битвы без бюджета в полмиллиона на съёмочную площадку. Можно начать с тестового сниппета под припев.
-          </p>
-        </div>
-
-        <!-- Сетка: широкая главная карточка «Шико» + карточка вертикального сниппета -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-7 items-stretch">
-
-          <!-- Флагманский клип: Шико -->
-          <article class="lg:col-span-8 cinema-card rounded-2xl overflow-hidden flex flex-col reveal">
-            <div data-video-id="shiko" class="video-trigger group relative aspect-video w-full overflow-hidden cursor-pointer bg-obsidian">
-              <img data-poster-for="shiko" src="" alt="Шико: Воин в шутовском колпаке" class="hidden absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.classList.add('hidden')" />
-
-              <!-- Атмосферный арт-задник для Шико -->
-              <svg class="w-full h-full" viewBox="0 0 960 540" preserveAspectRatio="xMidYMid slice" fill="none">
-                <defs>
-                  <radialGradient id="shikoGlow" cx="62%" cy="42%" r="55%">
-                    <stop offset="0%" stop-color="#b53b3b" stop-opacity="0.38"/>
-                    <stop offset="50%" stop-color="#d4a359" stop-opacity="0.16"/>
-                    <stop offset="100%" stop-color="#09090b" stop-opacity="0"/>
-                  </radialGradient>
-                </defs>
-                <rect width="960" height="540" fill="#0d0a0c"/>
-                <rect width="960" height="540" fill="url(#shikoGlow)"/>
-                <!-- Скрещённые шпаги и силуэт короны/шутовского колпака -->
-                <g stroke="#d4a359" stroke-opacity="0.28" stroke-width="1.5">
-                  <line x1="250" y1="470" x2="710" y2="90"/>
-                  <line x1="710" y1="470" x2="250" y2="90"/>
-                  <circle cx="480" cy="270" r="145" stroke-dasharray="5 7"/>
-                  <path d="M380 230 C410 150, 460 155, 480 195 C500 155, 550 150, 580 230" stroke-width="2" stroke-opacity="0.45"/>
-                  <circle cx="380" cy="232" r="5" fill="#d4a359" fill-opacity="0.5"/>
-                  <circle cx="480" cy="145" r="5" fill="#d4a359" fill-opacity="0.5"/>
-                  <circle cx="580" cy="232" r="5" fill="#d4a359" fill-opacity="0.5"/>
-                </g>
-                <rect width="960" height="540" fill="url(#vignette)"/>
-              </svg>
-
-              <div class="absolute top-4 left-4 flex flex-wrap gap-2">
-                <span class="px-3 py-1 rounded-full bg-ember/85 border border-gold/30 text-[11px] font-semibold uppercase tracking-wider text-parchment">Флагманский кейс</span>
-                <span class="px-3 py-1 rounded-full bg-obsidian/75 border border-white/15 text-[11px] uppercase tracking-wider text-goldLight">Фолк-метал клип</span>
-              </div>
-
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="play-orb w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-obsidian/75 border border-gold/60 backdrop-blur-md flex items-center justify-center">
-                  <svg class="w-7 h-7 sm:w-8 sm:h-8 text-goldLight ml-1 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg>
-                </div>
-              </div>
-            </div>
-
-            <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="font-display text-2xl sm:text-3xl font-semibold text-parchment">
-                  Шико: Воин в шутовском колпаке
-                </h3>
-                <p class="mt-3 text-sm sm:text-base text-ash leading-relaxed">
-                  Фолк-метал клип · Сюжетная режиссура, харизматичный герой с сохранённой внешностью в каждом плане, динамичный монтаж точно в ритм трека и густая атмосфера средневековой драмы.
-                </p>
-              </div>
-
-              <div class="mt-6 pt-5 border-t border-gold/15 flex flex-wrap items-center justify-between gap-4">
-                <button type="button" data-video-id="shiko" class="video-trigger inline-flex items-center gap-2 text-sm font-semibold text-goldLight hover:text-gold transition-colors">
-                  <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg>
-                  <span>Смотреть клип в плеере</span>
-                </button>
-                <a data-external-for="shiko" href="#" target="_blank" rel="noopener noreferrer" class="text-xs sm:text-sm text-ash hover:text-parchment transition-colors">
-                  Открыть в VK / Drive ↗
-                </a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Карточка 2: Вертикальный сниппет -->
-          <article class="lg:col-span-4 cinema-card rounded-2xl overflow-hidden flex flex-col reveal">
-            <div data-video-id="snippet" class="video-trigger group relative aspect-[16/10] lg:aspect-[4/4.3] w-full overflow-hidden cursor-pointer bg-obsidian">
-              <img data-poster-for="snippet" src="" alt="Вертикальный сниппет к релизу" class="hidden absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.classList.add('hidden')" />
-
-              <svg class="w-full h-full" viewBox="0 0 480 520" preserveAspectRatio="xMidYMid slice" fill="none">
-                <defs>
-                  <radialGradient id="snipGlow" cx="50%" cy="35%" r="55%">
-                    <stop offset="0%" stop-color="#d4a359" stop-opacity="0.30"/>
-                    <stop offset="65%" stop-color="#8c2d2d" stop-opacity="0.12"/>
-                    <stop offset="100%" stop-color="#09090b" stop-opacity="0"/>
-                  </radialGradient>
-                </defs>
-                <rect width="480" height="520" fill="#0d0d12"/>
-                <rect width="480" height="520" fill="url(#snipGlow)"/>
-                <!-- Рамка смартфона 9:16 и звуковая волна -->
-                <rect x="135" y="62" width="210" height="372" rx="22" stroke="#d4a359" stroke-opacity="0.45" stroke-width="1.5" fill="#121218" fill-opacity="0.7"/>
-                <line x1="205" y1="82" x2="275" y2="82" stroke="#d4a359" stroke-opacity="0.3" stroke-width="3" stroke-linecap="round"/>
-                <!-- Волна припева -->
-                <g stroke="#d4a359" stroke-opacity="0.55" stroke-width="3" stroke-linecap="round">
-                  <line x1="175" y1="365" x2="175" y2="385"/>
-                  <line x1="191" y1="350" x2="191" y2="395"/>
-                  <line x1="207" y1="335" x2="207" y2="405"/>
-                  <line x1="223" y1="355" x2="223" y2="390"/>
-                  <line x1="239" y1="328" x2="239" y2="408"/>
-                  <line x1="255" y1="348" x2="255" y2="394"/>
-                  <line x1="271" y1="338" x2="271" y2="402"/>
-                  <line x1="287" y1="358" x2="287" y2="388"/>
-                  <line x1="303" y1="368" x2="303" y2="382"/>
-                </g>
-              </svg>
-
-              <div class="absolute top-4 left-4">
-                <span class="px-3 py-1 rounded-full bg-obsidian/80 border border-gold/35 text-[11px] uppercase tracking-wider text-goldLight">9:16 · 20–30 сек</span>
-              </div>
-
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="play-orb w-16 h-16 rounded-full bg-obsidian/75 border border-gold/60 backdrop-blur-md flex items-center justify-center">
-                  <svg class="w-7 h-7 text-goldLight ml-1 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg>
-                </div>
-              </div>
-            </div>
-
-            <div class="p-6 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="font-display text-2xl font-semibold text-parchment leading-snug">
-                  Вертикальный сниппет к релизу (20–30 сек, 9:16)
-                </h3>
-                <p class="mt-3 text-sm text-ash leading-relaxed">
-                  Идеальный формат под припев для VK Клипов, Reels и Яндекс-шотов. Комфортный чек для рок-, фолк- и фэнтези-групп, чтобы проверить реакцию слушателей перед полным клипом.
-                </p>
-              </div>
-
-              <div class="mt-6 pt-5 border-t border-gold/15 flex items-center justify-between gap-3">
-                <button type="button" data-video-id="snippet" class="video-trigger text-sm font-semibold text-goldLight hover:text-gold transition-colors">
-                  Смотреть пример →
-                </button>
-                <a data-external-for="snippet" href="#" target="_blank" rel="noopener noreferrer" class="text-xs text-ash hover:text-parchment transition-colors">
-                  VK / Drive ↗
-                </a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <div class="gold-hairline max-w-6xl mx-auto"></div>
-
-    <!-- ======================================================================
-         4. БУКТРЕЙЛЕРЫ — ДЛЯ ПИСАТЕЛЕЙ (id="booktrailers")
-         ====================================================================== -->
-    <section id="booktrailers" class="py-20 sm:py-28 bg-gradient-to-b from-obsidian via-charcoal/55 to-obsidian">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Заголовок секции -->
         <div class="max-w-3xl mb-12 reveal">
-          <p class="text-xs uppercase tracking-[0.26em] text-gold font-semibold">ДЛЯ ПИСАТЕЛЕЙ И ИЗДАТЕЛЬСТВ</p>
+          <p class="text-xs uppercase tracking-[0.26em] text-gold font-semibold">ЗВУК И ОЗВУЧКА ПОД КЛЮЧ</p>
           <h2 class="mt-3 font-display text-3xl sm:text-5xl font-semibold text-parchment leading-tight">
-            Буктрейлеры, после которых книгу хочется открыть немедленно
+            Студийная AI-озвучка и атмосферный саунд-дизайн
           </h2>
           <p class="mt-4 text-sm sm:text-base text-ash leading-relaxed">
-            Создаю визуальные тизеры и сюжетные трейлеры для авторов <strong class="text-parchment font-medium">Литрес, Литнет, Автор.Тудей</strong> и книжных издательств. Работаю в тёмном фэнтези, ромфанте, исторической прозе и мистике — бережно переношу внешность ваших героев и настроение текста в живой кадр.
+            Закрываю звуковую часть видео целиком: подбираю чистый студийный нейросетевой голос под настроение проекта, собираю оркестровый или фолк-саундтрек с проработкой эффектов и свожу всё в единое киношное звучание. Если проекту принципиально нужен живой диктор — организуем запись по отдельному запросу.
           </p>
         </div>
 
-        <!-- 3 витринные карточки -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
-          <!-- Карточка 1: Тёмное фэнтези -->
-          <article class="cinema-card rounded-2xl overflow-hidden flex flex-col reveal">
-            <div data-video-id="bookDark" class="video-trigger group relative aspect-video overflow-hidden cursor-pointer bg-obsidian">
-              <img data-poster-for="bookDark" src="" alt="Буктрейлер тёмного фэнтези" class="hidden absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.classList.add('hidden')" />
-              <svg class="w-full h-full" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" fill="none">
-                <rect width="640" height="360" fill="#0b0b10"/>
-                <circle cx="320" cy="170" r="150" fill="#8c2d2d" fill-opacity="0.16"/>
-                <path d="M210 280 L250 155 L290 200 L320 95 L350 200 L390 155 L430 280 Z" stroke="#d4a359" stroke-opacity="0.4" stroke-width="1.5" fill="#141218" fill-opacity="0.8"/>
-                <line x1="140" y1="280" x2="500" y2="280" stroke="#d4a359" stroke-opacity="0.35" stroke-width="1"/>
-              </svg>
-              <span class="absolute top-3.5 left-3.5 px-2.5 py-1 rounded-full bg-obsidian/80 border border-gold/30 text-[11px] text-goldLight">16:9 · 45–60 сек</span>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="play-orb w-14 h-14 rounded-full bg-obsidian/75 border border-gold/60 flex items-center justify-center">
-                  <svg class="w-6 h-6 text-goldLight ml-0.5 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg>
-                </div>
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="font-display text-2xl font-semibold text-parchment">Буктрейлер в жанре тёмного фэнтези (16:9)</h3>
-                <p class="mt-2.5 text-sm text-ash leading-relaxed">
-                  Мрачная атмосфера, интрига, ключевые герои и драматичные титры с кульминационным клиффхэнгером для карточки книги и YouTube/VK.
-                </p>
-              </div>
-              <div class="mt-5 pt-4 border-t border-gold/15 flex items-center justify-between">
-                <button type="button" data-video-id="bookDark" class="video-trigger text-sm font-semibold text-goldLight hover:text-gold">Смотреть →</button>
-                <a data-external-for="bookDark" href="#" target="_blank" rel="noopener noreferrer" class="text-xs text-ash hover:text-parchment">VK / Drive ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Карточка 2: Ромфант / чувственный тизер -->
-          <article class="cinema-card rounded-2xl overflow-hidden flex flex-col reveal">
-            <div data-video-id="bookRomfant" class="video-trigger group relative aspect-video overflow-hidden cursor-pointer bg-obsidian">
-              <img data-poster-for="bookRomfant" src="" alt="Романтическое фэнтези тизер" class="hidden absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.classList.add('hidden')" />
-              <svg class="w-full h-full" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" fill="none">
-                <rect width="640" height="360" fill="#100b0f"/>
-                <circle cx="320" cy="180" r="145" fill="#d4a359" fill-opacity="0.16"/>
-                <circle cx="320" cy="180" r="88" stroke="#ebd09e" stroke-opacity="0.35" stroke-width="1"/>
-                <path d="M320 96 C365 130, 375 215, 320 264 C265 215, 275 130, 320 96 Z" stroke="#d4a359" stroke-opacity="0.45" stroke-width="1.3"/>
-                <circle cx="320" cy="180" r="24" stroke="#b53b3b" stroke-opacity="0.65" stroke-width="1.5"/>
-              </svg>
-              <span class="absolute top-3.5 left-3.5 px-2.5 py-1 rounded-full bg-obsidian/80 border border-gold/30 text-[11px] text-goldLight">9:16 · Для таргета и Reels</span>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="play-orb w-14 h-14 rounded-full bg-obsidian/75 border border-gold/60 flex items-center justify-center">
-                  <svg class="w-6 h-6 text-goldLight ml-0.5 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg>
-                </div>
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="font-display text-2xl font-semibold text-parchment">Романтическое фэнтези / чувственный тизер (9:16)</h3>
-                <p class="mt-2.5 text-sm text-ash leading-relaxed">
-                  Эмоциональные крупные планы, химия между героями, эстетичный свет и цепляющие цитаты из книги для рекламы в VK, Telegram и Reels.
-                </p>
-              </div>
-              <div class="mt-5 pt-4 border-t border-gold/15 flex items-center justify-between">
-                <button type="button" data-video-id="bookRomfant" class="video-trigger text-sm font-semibold text-goldLight hover:text-gold">Смотреть →</button>
-                <a data-external-for="bookRomfant" href="#" target="_blank" rel="noopener noreferrer" class="text-xs text-ash hover:text-parchment">VK / Drive ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Карточка 3: Выделенный промо-баннер хита «Буктрейлер + вертикальный тизер» -->
-          <article class="md:col-span-2 lg:col-span-1 relative rounded-2xl overflow-hidden border border-gold/55 bg-gradient-to-b from-[#1f1711] via-[#141114] to-[#0e0c0f] p-7 flex flex-col justify-between shadow-2xl shadow-gold/10 reveal">
-            <div class="pointer-events-none absolute -top-20 -right-20 w-56 h-56 rounded-full bg-gold/15 blur-3xl"></div>
+        <!-- Две главные карточки услуг -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
+          <!-- Карточка 1: Студийная AI-озвучка -->
+          <article class="cinema-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between reveal">
             <div>
-              <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold/20 border border-gold/45 text-[11px] font-bold uppercase tracking-[0.16em] text-goldLight">
-                ★ Хит для авторов
+              <div class="flex items-start justify-between gap-4 mb-5">
+                <div class="w-12 h-12 rounded-xl bg-gold/15 border border-gold/35 flex items-center justify-center text-goldLight shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z"/></svg>
+                </div>
+                <span class="px-3.5 py-1.5 rounded-full bg-gold/15 border border-gold/40 text-xs font-semibold tracking-wide text-goldLight whitespace-nowrap">
+                  От 1 500 ₽ / мин
+                </span>
               </div>
-              <h3 class="mt-5 font-display text-3xl font-semibold text-parchment leading-tight">
-                Пакет «Буктрейлер + вертикальный тизер»
+
+              <h3 class="font-display text-2xl sm:text-3xl font-semibold text-parchment leading-snug">
+                Студийная AI-озвучка с выбором тембра
               </h3>
               <p class="mt-3 text-sm text-ash leading-relaxed">
-                Самый выгодный формат для запуска книги: закрывает сразу и витрину площадки, и рекламу в соцсетях в едином визуальном стиле.
+                Оптимальное решение для буктрейлеров, промо и сериалов — звучит дорого, чисто и позволяет гибко править сценарий прямо в процессе работы.
               </p>
-              <ul class="mt-5 space-y-2.5 text-sm text-parchment/90">
+
+              <ul class="mt-5 space-y-3 text-sm text-parchment/90">
                 <li class="flex items-start gap-2.5">
-                  <span class="text-gold mt-0.5">✦</span>
-                  <span>Основной буктрейлер 1–1,5 мин (16:9)</span>
+                  <span class="text-gold mt-0.5 shrink-0">✦</span>
+                  <span>Кристально чистое студийное звучание без фоновых шумов и эха</span>
                 </li>
                 <li class="flex items-start gap-2.5">
-                  <span class="text-gold mt-0.5">✦</span>
-                  <span>Вертикальная нарезка-тизер 15 сек (9:16) для Reels / VK Клипов</span>
+                  <span class="text-gold mt-0.5 shrink-0">✦</span>
+                  <span>Быстрая запись без ожидания графика диктора и согласования студий</span>
                 </li>
                 <li class="flex items-start gap-2.5">
-                  <span class="text-gold mt-0.5">✦</span>
-                  <span>Подбор музыки, титры и 2 круга правок</span>
+                  <span class="text-gold mt-0.5 shrink-0">✦</span>
+                  <span>Мгновенные правки текста, если нужно заменить слово или фразу в сценарии</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-gold mt-0.5 shrink-0">✦</span>
+                  <span>Финальная обработка, расстановка пауз и сведение под ритм видео</span>
                 </li>
               </ul>
             </div>
-
-            <div class="mt-7 pt-5 border-t border-gold/25">
-              <div class="flex items-baseline justify-between mb-4">
-                <span class="text-xs uppercase tracking-widest text-ash">Тариф «Старт»</span>
-                <span class="font-display text-3xl font-bold text-goldLight">от 12 000 ₽</span>
-              </div>
-              <button type="button" data-select-plan="book_pack" class="select-plan-btn w-full py-3.5 px-4 rounded-xl bg-gradient-to-r from-gold to-bronze text-obsidian font-semibold text-sm tracking-wide hover:brightness-110 transition-all">
-                Рассчитать этот пакет
-              </button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <div class="gold-hairline max-w-6xl mx-auto"></div>
-
-    <!-- ======================================================================
-         5. AI-СЕРИАЛЫ — «ЭТЕРИЯ» (id="series")
-         ====================================================================== -->
-    <section id="series" class="py-20 sm:py-28">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12 reveal">
-          <div class="max-w-3xl">
-            <p class="text-xs uppercase tracking-[0.26em] text-gold font-semibold">АВТОРСКАЯ ВСЕЛЕННАЯ · AI-СЕРИАЛЫ</p>
-            <h2 class="mt-3 font-display text-3xl sm:text-5xl font-semibold text-parchment leading-tight">
-              Этерия: Закон Крови
-            </h2>
-            <p class="mt-4 text-sm sm:text-base text-ash leading-relaxed">
-              Эльфийская и Драконья саги — моя авторская вселенная и живое доказательство режиссёрского контроля: удержание единых лиц и костюмов сквозь десятки сцен, сложный контрастный свет кьяроскуро, психологическое напряжение и многосерийный сторителлинг.
-            </p>
-          </div>
-          <a data-contact-link="youtube" href="https://www.youtube.com/@irinysmith" target="_blank" rel="noopener noreferrer" class="self-start lg:self-end inline-flex items-center gap-2 px-4 py-2.5 rounded-xl border border-gold/30 text-xs sm:text-sm font-medium text-goldLight hover:border-gold hover:bg-gold/10 transition-all">
-            <span>Все серии на YouTube</span>
-            <span>↗</span>
-          </a>
-        </div>
-
-        <!-- 3 карточки эпизодов -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-7">
-          <!-- Эпизод 1 -->
-          <article class="cinema-card rounded-2xl overflow-hidden flex flex-col reveal">
-            <div data-video-id="ethereaEp4" class="video-trigger group relative aspect-video overflow-hidden cursor-pointer bg-obsidian">
-              <img data-poster-for="ethereaEp4" src="" alt="Закон Крови — Серия 4" class="hidden absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.classList.add('hidden')" />
-              <svg class="w-full h-full" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" fill="none">
-                <rect width="640" height="360" fill="#0a0c12"/>
-                <circle cx="480" cy="110" r="140" fill="#3a5169" fill-opacity="0.22"/>
-                <circle cx="150" cy="250" r="130" fill="#8c2d2d" fill-opacity="0.22"/>
-                <path d="M100 320 Q320 140 540 320" stroke="#d4a359" stroke-opacity="0.35" stroke-width="1.5"/>
-                <text x="320" y="190" text-anchor="middle" fill="#d4a359" fill-opacity="0.32" font-family="Cormorant Garamond, serif" font-size="38" letter-spacing="8">ЭПИЗОД IV</text>
-              </svg>
-              <span class="absolute top-3.5 left-3.5 px-2.5 py-1 rounded-full bg-obsidian/80 border border-gold/30 text-[11px] text-goldLight">Сериал · 22 мин</span>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="play-orb w-14 h-14 rounded-full bg-obsidian/75 border border-gold/60 flex items-center justify-center">
-                  <svg class="w-6 h-6 text-goldLight ml-0.5 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg>
-                </div>
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="font-display text-2xl font-semibold text-parchment">Закон Крови — Серия 4</h3>
-                <p class="mt-2.5 text-sm text-ash leading-relaxed">
-                  Политическая драма, предательство, сложные диалоги с живыми голосами и контрастная работа со светом.
-                </p>
-              </div>
-              <div class="mt-5 pt-4 border-t border-gold/15 flex items-center justify-between">
-                <button type="button" data-video-id="ethereaEp4" class="video-trigger text-sm font-semibold text-goldLight hover:text-gold">Смотреть фрагмент →</button>
-                <a data-external-for="ethereaEp4" href="#" target="_blank" rel="noopener noreferrer" class="text-xs text-ash hover:text-parchment">VK / YT ↗</a>
-              </div>
-            </div>
           </article>
 
-          <!-- Эпизод 2 -->
-          <article class="cinema-card rounded-2xl overflow-hidden flex flex-col reveal">
-            <div data-video-id="ethereaMovie" class="video-trigger group relative aspect-video overflow-hidden cursor-pointer bg-obsidian">
-              <img data-poster-for="ethereaMovie" src="" alt="Легенда о проклятии Лордов-Хранителей" class="hidden absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.classList.add('hidden')" />
-              <svg class="w-full h-full" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" fill="none">
-                <rect width="640" height="360" fill="#0d0b09"/>
-                <circle cx="320" cy="160" r="155" fill="#d4a359" fill-opacity="0.18"/>
-                <polygon points="320,62 395,180 320,298 245,180" stroke="#ebd09e" stroke-opacity="0.38" stroke-width="1.5"/>
-                <circle cx="320" cy="180" r="46" stroke="#d4a359" stroke-opacity="0.45" stroke-width="1"/>
-              </svg>
-              <span class="absolute top-3.5 left-3.5 px-2.5 py-1 rounded-full bg-gold/25 border border-gold/45 text-[11px] font-semibold text-goldLight">210К+ просмотров</span>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="play-orb w-14 h-14 rounded-full bg-obsidian/75 border border-gold/60 flex items-center justify-center">
-                  <svg class="w-6 h-6 text-goldLight ml-0.5 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg>
-                </div>
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="font-display text-2xl font-semibold text-parchment">Легенда о проклятии Лордов-Хранителей</h3>
-                <p class="mt-2.5 text-sm text-ash leading-relaxed">
-                  Полный фильм с живой озвучкой: масштабное построение мира, единая эстетика и удержание зрительского внимания на длинной дистанции.
-                </p>
-              </div>
-              <div class="mt-5 pt-4 border-t border-gold/15 flex items-center justify-between">
-                <button type="button" data-video-id="ethereaMovie" class="video-trigger text-sm font-semibold text-goldLight hover:text-gold">Смотреть →</button>
-                <a data-external-for="ethereaMovie" href="#" target="_blank" rel="noopener noreferrer" class="text-xs text-ash hover:text-parchment">VK / YT ↗</a>
-              </div>
-            </div>
-          </article>
-
-          <!-- Эпизод 3 -->
-          <article class="cinema-card rounded-2xl overflow-hidden flex flex-col reveal">
-            <div data-video-id="ethereaLore" class="video-trigger group relative aspect-video overflow-hidden cursor-pointer bg-obsidian">
-              <img data-poster-for="ethereaLore" src="" alt="Эльфийская и Драконья саги: Разбор лора" class="hidden absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" onerror="this.classList.add('hidden')" />
-              <svg class="w-full h-full" viewBox="0 0 640 360" preserveAspectRatio="xMidYMid slice" fill="none">
-                <rect width="640" height="360" fill="#0d0a0c"/>
-                <circle cx="200" cy="180" r="120" fill="#8c2d2d" fill-opacity="0.22"/>
-                <circle cx="440" cy="180" r="120" fill="#d4a359" fill-opacity="0.16"/>
-                <circle cx="275" cy="180" r="78" stroke="#d4a359" stroke-opacity="0.32" stroke-width="1.2"/>
-                <circle cx="365" cy="180" r="78" stroke="#ebd09e" stroke-opacity="0.32" stroke-width="1.2"/>
-              </svg>
-              <span class="absolute top-3.5 left-3.5 px-2.5 py-1 rounded-full bg-obsidian/80 border border-gold/30 text-[11px] text-goldLight">Лор · Персонажи</span>
-              <div class="absolute inset-0 flex items-center justify-center">
-                <div class="play-orb w-14 h-14 rounded-full bg-obsidian/75 border border-gold/60 flex items-center justify-center">
-                  <svg class="w-6 h-6 text-goldLight ml-0.5 transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg>
-                </div>
-              </div>
-            </div>
-            <div class="p-6 flex-1 flex flex-col justify-between">
-              <div>
-                <h3 class="font-display text-2xl font-semibold text-parchment">Эльфийская и Драконья саги: Разбор лора</h3>
-                <p class="mt-2.5 text-sm text-ash leading-relaxed">
-                  Галерея персонажей, династии, архитектура и сторителлинг — отличный пример презентации сложных книжных и игровых вселенных.
-                </p>
-              </div>
-              <div class="mt-5 pt-4 border-t border-gold/15 flex items-center justify-between">
-                <button type="button" data-video-id="ethereaLore" class="video-trigger text-sm font-semibold text-goldLight hover:text-gold">Смотреть →</button>
-                <a data-external-for="ethereaLore" href="#" target="_blank" rel="noopener noreferrer" class="text-xs text-ash hover:text-parchment">VK / YT ↗</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <div class="gold-hairline max-w-6xl mx-auto"></div>
-
-    <!-- ======================================================================
-         6. ОЗВУЧКА И ЗВУК (id="audio")
-         ====================================================================== -->
-    <section id="audio" class="py-20 sm:py-28 bg-gradient-to-b from-obsidian via-[#100e12] to-obsidian">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-3xl mb-12 reveal">
-          <p class="text-xs uppercase tracking-[0.26em] text-gold font-semibold">ОЗВУЧКА И САУНД-ДИЗАЙН</p>
-          <h2 class="mt-3 font-display text-3xl sm:text-5xl font-semibold text-parchment leading-tight">
-            Половина магии кино — это то, что зритель слышит
-          </h2>
-          <p class="mt-4 text-sm sm:text-base text-ash leading-relaxed">
-            Вам не нужно отдельно искать дикторов и звукорежиссёра: собираю видео с живыми голосами, атмосферной музыкой и детальным саунд-дизайном под ключ.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
-          <!-- Блок А: Живая актёрская озвучка -->
-          <div class="cinema-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between reveal">
+          <!-- Карточка 2: Саунд-дизайн и музыкальное оформление -->
+          <article class="cinema-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between reveal">
             <div>
-              <div class="w-12 h-12 rounded-xl bg-gold/15 border border-gold/35 flex items-center justify-center text-goldLight mb-5">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z"/></svg>
+              <div class="flex items-start justify-between gap-4 mb-5">
+                <div class="w-12 h-12 rounded-xl bg-ember/25 border border-gold/35 flex items-center justify-center text-goldLight shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z"/></svg>
+                </div>
+                <span class="px-3.5 py-1.5 rounded-full bg-gold/15 border border-gold/40 text-xs font-semibold tracking-wide text-goldLight whitespace-nowrap">
+                  2 000 ₽
+                </span>
               </div>
-              <h3 class="font-display text-2xl sm:text-3xl font-semibold text-parchment">Живая актёрская озвучка</h3>
-              <p class="mt-3 text-sm sm:text-base text-ash leading-relaxed">
-                Сотрудничество с дикторами и актёрами (выразительные мужские и женские голоса), глубокая драматическая подача под характер героя и чистое сведение голоса под картинку — без бездушного «роботизированного» чтения.
+
+              <h3 class="font-display text-2xl sm:text-3xl font-semibold text-parchment leading-snug">
+                Саунд-дизайн и музыкальное оформление
+              </h3>
+              <p class="mt-3 text-sm text-ash leading-relaxed">
+                Создаю объёмную звуковую атмосферу, которая удерживает зрителя с первых секунд и делает кадры по-настоящему живыми.
+              </p>
+
+              <ul class="mt-5 space-y-3 text-sm text-parchment/90">
+                <li class="flex items-start gap-2.5">
+                  <span class="text-gold mt-0.5 shrink-0">✦</span>
+                  <span>Подбор или генерация атмосферных саундтреков (тёмное фэнтези, оркестр, фолк, вокализ, рок)</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-gold mt-0.5 shrink-0">✦</span>
+                  <span>Проработка звуковых акцентов, переходов и окружения (ветер, огонь, звон стали, шаги)</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <span class="text-gold mt-0.5 shrink-0">✦</span>
+                  <span>Профессиональный баланс голоса, эффектов и музыки для соцсетей и экранов</span>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+
+        <!-- Интерактивная «Витрина тембров и саунд-демо» -->
+        <div class="mt-10 rounded-2xl border border-gold/25 bg-charcoal/75 p-6 sm:p-8 shadow-2xl reveal">
+          <div class="flex flex-col md:flex-row md:items-end justify-between gap-5 mb-7">
+            <div>
+              <p class="text-[11px] uppercase tracking-[0.22em] text-gold font-semibold">АУДИО-ВИТРИНА</p>
+              <h3 class="mt-2 font-display text-2xl sm:text-4xl font-semibold text-parchment">
+                Витрина тембров и саунд-демо
+              </h3>
+              <p class="mt-1.5 text-xs sm:text-sm text-ash">
+                Короткие 10–15-секундные образцы звучания — выберите тембр и атмосферу под ваш проект.
               </p>
             </div>
 
-            <!-- Интерактивный аудиоплеер Демо 1 -->
-            <div class="audio-demo-card mt-7 rounded-xl border border-gold/25 bg-obsidian/80 p-4 sm:p-5" data-audio-key="voiceDemo">
+            <!-- Вкладки категорий -->
+            <div class="inline-flex p-1 rounded-xl bg-obsidian/90 border border-gold/25 self-start md:self-auto" role="tablist" aria-label="Категории аудио-демо">
+              <button type="button" role="tab" aria-selected="true" data-demo-tab="voices" class="demo-tab-btn px-4 py-2.5 rounded-lg text-xs sm:text-sm font-semibold bg-gradient-to-r from-gold to-bronze text-obsidian transition-all">
+                AI-голоса (4 тембра)
+              </button>
+              <button type="button" role="tab" aria-selected="false" data-demo-tab="sounds" class="demo-tab-btn px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium text-ash hover:text-parchment transition-all">
+                Саунд-дизайн и музыка (2 примера)
+              </button>
+            </div>
+          </div>
+
+          <!-- Панель 1: 4 тембра AI-голосов -->
+          <div data-demo-panel="voices" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <!-- Тембр 1 -->
+            <div class="audio-demo-card rounded-xl border border-white/10 hover:border-gold/40 bg-obsidian/85 p-5 transition-colors" data-demo-group="voiceDemos" data-audio-key="darkBaritone">
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-full bg-ember/25 border border-gold/25 text-[11px] font-medium text-goldLight">
+                  Тёмное фэнтези и трейлеры
+                </span>
+                <span class="audio-time text-[11px] font-mono text-ash">0:00 / 0:12</span>
+              </div>
               <div class="flex items-center gap-4">
-                <button type="button" class="audio-play-btn w-12 h-12 shrink-0 rounded-full bg-gradient-to-br from-gold to-bronze text-obsidian flex items-center justify-center hover:brightness-110 transition-all shadow-lg shadow-gold/20" aria-label="Воспроизвести демо озвучки и атмосферы">
+                <button type="button" class="audio-play-btn w-12 h-12 shrink-0 rounded-full bg-gradient-to-br from-gold to-bronze text-obsidian flex items-center justify-center hover:brightness-110 transition-all shadow-lg shadow-gold/15" aria-label="Воспроизвести демо: Глубокий киношный баритон">
                   <svg class="icon-play w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg>
                   <svg class="icon-pause w-5 h-5 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
                 </button>
                 <div class="min-w-0 flex-1">
-                  <div class="flex items-center justify-between gap-2">
-                    <p class="text-sm font-semibold text-parchment truncate">Демо: Драматическая сцена · Атмосфера и голос</p>
-                    <span class="audio-status text-[11px] text-goldLight shrink-0">Превью</span>
-                  </div>
-                  <p class="text-xs text-ash mt-0.5">Сведение голоса поверх камерной подложки и эмбиента</p>
-                  <div class="mt-2.5 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
-                    <div class="audio-progress h-full w-0 bg-gradient-to-r from-gold to-emberBright transition-all duration-150"></div>
-                  </div>
+                  <h4 class="font-display text-xl sm:text-2xl font-semibold text-parchment leading-tight">Глубокий киношный баритон</h4>
+                  <p class="text-xs text-ash mt-1">Мужской, драматичный, эпичный — идеален для буктрейлеров и тизеров</p>
                 </div>
-                <!-- Эквалайзер -->
-                <div class="hidden sm:flex items-end gap-1 h-8 px-1" aria-hidden="true">
+                <div class="hidden sm:flex items-end gap-1 h-8 px-1 shrink-0" aria-hidden="true">
                   <span class="eq-bar w-1 h-full rounded-full bg-gold/80"></span>
                   <span class="eq-bar w-1 h-full rounded-full bg-goldLight/80"></span>
                   <span class="eq-bar w-1 h-full rounded-full bg-bronze/80"></span>
                   <span class="eq-bar w-1 h-full rounded-full bg-gold/80"></span>
-                  <span class="eq-bar w-1 h-full rounded-full bg-goldLight/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-emberBright/80"></span>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <!-- Блок Б: Саундтрек и SFX -->
-          <div class="cinema-card rounded-2xl p-6 sm:p-8 flex flex-col justify-between reveal">
-            <div>
-              <div class="w-12 h-12 rounded-xl bg-ember/25 border border-gold/35 flex items-center justify-center text-goldLight mb-5">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 9l10.5-3m0 6.553v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 1 1-.99-3.467l2.31-.66a2.25 2.25 0 0 0 1.632-2.163Zm0 0V2.25L9 5.25v10.303m0 0v3.75a2.25 2.25 0 0 1-1.632 2.163l-1.32.377a1.803 1.803 0 0 1-.99-3.467l2.31-.66A2.25 2.25 0 0 0 9 15.553Z"/></svg>
+              <div class="mt-4 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
+                <div class="audio-progress h-full w-0 bg-gradient-to-r from-gold to-emberBright transition-all duration-150"></div>
               </div>
-              <h3 class="font-display text-2xl sm:text-3xl font-semibold text-parchment">Тёмно-фэнтезийный саундтрек и SFX</h3>
-              <p class="mt-3 text-sm sm:text-base text-ash leading-relaxed">
-                Камерные инструментальные композиции (виолончель, альт, лютня, фортепиано, беззвучный вокал) и глубокий саунд-дизайн (звон цепей, треск факелов, сталь, шаги по камню), сведённые так, чтобы реплики звучали кристально чисто.
+              <p class="audio-fallback-note hidden mt-3 text-[11px] sm:text-xs text-goldLight/90 bg-gold/10 border border-gold/25 rounded-lg px-3 py-2 leading-relaxed">
+                Аудио-образец скоро будет загружен — напишите в Telegram, пришлю примеры в чат.
               </p>
             </div>
 
-            <!-- Интерактивный аудиоплеер Демо 2 -->
-            <div class="audio-demo-card mt-7 rounded-xl border border-gold/25 bg-obsidian/80 p-4 sm:p-5" data-audio-key="ostDemo">
+            <!-- Тембр 2 -->
+            <div class="audio-demo-card rounded-xl border border-white/10 hover:border-gold/40 bg-obsidian/85 p-5 transition-colors" data-demo-group="voiceDemos" data-audio-key="softFemale">
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-full bg-gold/15 border border-gold/25 text-[11px] font-medium text-goldLight">
+                  Ромфант и лирика
+                </span>
+                <span class="audio-time text-[11px] font-mono text-ash">0:00 / 0:12</span>
+              </div>
               <div class="flex items-center gap-4">
-                <button type="button" class="audio-play-btn w-12 h-12 shrink-0 rounded-full bg-gradient-to-br from-gold to-bronze text-obsidian flex items-center justify-center hover:brightness-110 transition-all shadow-lg shadow-gold/20" aria-label="Воспроизвести демо тёмно-фэнтезийного саундтрека">
+                <button type="button" class="audio-play-btn w-12 h-12 shrink-0 rounded-full bg-gradient-to-br from-gold to-bronze text-obsidian flex items-center justify-center hover:brightness-110 transition-all shadow-lg shadow-gold/15" aria-label="Воспроизвести демо: Мягкий выразительный голос">
                   <svg class="icon-play w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg>
                   <svg class="icon-pause w-5 h-5 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
                 </button>
                 <div class="min-w-0 flex-1">
-                  <div class="flex items-center justify-between gap-2">
-                    <p class="text-sm font-semibold text-parchment truncate">Демо: Тёмная виолончель и атмосфера каземата</p>
-                    <span class="audio-status text-[11px] text-goldLight shrink-0">Превью</span>
-                  </div>
-                  <p class="text-xs text-ash mt-0.5">Камерный инструментальный эмбиент + кинематографический SFX</p>
-                  <div class="mt-2.5 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
-                    <div class="audio-progress h-full w-0 bg-gradient-to-r from-gold to-emberBright transition-all duration-150"></div>
-                  </div>
+                  <h4 class="font-display text-xl sm:text-2xl font-semibold text-parchment leading-tight">Мягкий выразительный голос</h4>
+                  <p class="text-xs text-ash mt-1">Женский, чувственный, плавная подача для романтического фэнтези и драм</p>
                 </div>
-                <!-- Эквалайзер -->
-                <div class="hidden sm:flex items-end gap-1 h-8 px-1" aria-hidden="true">
+                <div class="hidden sm:flex items-end gap-1 h-8 px-1 shrink-0" aria-hidden="true">
+                  <span class="eq-bar w-1 h-full rounded-full bg-goldLight/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-gold/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-goldLight/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-bronze/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-gold/80"></span>
+                </div>
+              </div>
+              <div class="mt-4 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
+                <div class="audio-progress h-full w-0 bg-gradient-to-r from-gold to-emberBright transition-all duration-150"></div>
+              </div>
+              <p class="audio-fallback-note hidden mt-3 text-[11px] sm:text-xs text-goldLight/90 bg-gold/10 border border-gold/25 rounded-lg px-3 py-2 leading-relaxed">
+                Аудио-образец скоро будет загружен — напишите в Telegram, пришлю примеры в чат.
+              </p>
+            </div>
+
+            <!-- Тембр 3 -->
+            <div class="audio-demo-card rounded-xl border border-white/10 hover:border-gold/40 bg-obsidian/85 p-5 transition-colors" data-demo-group="voiceDemos" data-audio-key="studioAnnouncer">
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-full bg-white/5 border border-white/15 text-[11px] font-medium text-parchment/90">
+                  Реклама и промо
+                </span>
+                <span class="audio-time text-[11px] font-mono text-ash">0:00 / 0:12</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <button type="button" class="audio-play-btn w-12 h-12 shrink-0 rounded-full bg-gradient-to-br from-gold to-bronze text-obsidian flex items-center justify-center hover:brightness-110 transition-all shadow-lg shadow-gold/15" aria-label="Воспроизвести демо: Студийный диктор">
+                  <svg class="icon-play w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg>
+                  <svg class="icon-pause w-5 h-5 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+                </button>
+                <div class="min-w-0 flex-1">
+                  <h4 class="font-display text-xl sm:text-2xl font-semibold text-parchment leading-tight">Студийный диктор</h4>
+                  <p class="text-xs text-ash mt-1">Нейтральный, уверенный тембр с чистой дикцией для коммерческих роликов</p>
+                </div>
+                <div class="hidden sm:flex items-end gap-1 h-8 px-1 shrink-0" aria-hidden="true">
+                  <span class="eq-bar w-1 h-full rounded-full bg-gold/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-bronze/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-goldLight/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-gold/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-bronze/80"></span>
+                </div>
+              </div>
+              <div class="mt-4 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
+                <div class="audio-progress h-full w-0 bg-gradient-to-r from-gold to-emberBright transition-all duration-150"></div>
+              </div>
+              <p class="audio-fallback-note hidden mt-3 text-[11px] sm:text-xs text-goldLight/90 bg-gold/10 border border-gold/25 rounded-lg px-3 py-2 leading-relaxed">
+                Аудио-образец скоро будет загружен — напишите в Telegram, пришлю примеры в чат.
+              </p>
+            </div>
+
+            <!-- Тембр 4 -->
+            <div class="audio-demo-card rounded-xl border border-white/10 hover:border-gold/40 bg-obsidian/85 p-5 transition-colors" data-demo-group="voiceDemos" data-audio-key="grittyNarrator">
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-full bg-ember/25 border border-gold/25 text-[11px] font-medium text-goldLight">
+                  Мрачные истории и лор
+                </span>
+                <span class="audio-time text-[11px] font-mono text-ash">0:00 / 0:12</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <button type="button" class="audio-play-btn w-12 h-12 shrink-0 rounded-full bg-gradient-to-br from-gold to-bronze text-obsidian flex items-center justify-center hover:brightness-110 transition-all shadow-lg shadow-gold/15" aria-label="Воспроизвести демо: Характерный рассказчик">
+                  <svg class="icon-play w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg>
+                  <svg class="icon-pause w-5 h-5 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+                </button>
+                <div class="min-w-0 flex-1">
+                  <h4 class="font-display text-xl sm:text-2xl font-semibold text-parchment leading-tight">Характерный рассказчик</h4>
+                  <p class="text-xs text-ash mt-1">Атмосферный голос с лёгкой хрипотцой и нервом для тёмных сюжетов</p>
+                </div>
+                <div class="hidden sm:flex items-end gap-1 h-8 px-1 shrink-0" aria-hidden="true">
+                  <span class="eq-bar w-1 h-full rounded-full bg-emberBright/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-gold/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-goldLight/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-emberBright/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-bronze/80"></span>
+                </div>
+              </div>
+              <div class="mt-4 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
+                <div class="audio-progress h-full w-0 bg-gradient-to-r from-gold to-emberBright transition-all duration-150"></div>
+              </div>
+              <p class="audio-fallback-note hidden mt-3 text-[11px] sm:text-xs text-goldLight/90 bg-gold/10 border border-gold/25 rounded-lg px-3 py-2 leading-relaxed">
+                Аудио-образец скоро будет загружен — напишите в Telegram, пришлю примеры в чат.
+              </p>
+            </div>
+          </div>
+
+          <!-- Панель 2: 2 примера саунд-дизайна и музыки -->
+          <div data-demo-panel="sounds" class="hidden grid-cols-1 md:grid-cols-2 gap-5">
+            <!-- Саунд-пример 1 -->
+            <div class="audio-demo-card rounded-xl border border-white/10 hover:border-gold/40 bg-obsidian/85 p-5 transition-colors" data-demo-group="soundDemos" data-audio-key="ethereaOst">
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-full bg-gold/15 border border-gold/30 text-[11px] font-medium text-goldLight">
+                  Тёмное фэнтези / Оркестр и вокализ
+                </span>
+                <span class="audio-time text-[11px] font-mono text-ash">0:00 / 0:12</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <button type="button" class="audio-play-btn w-12 h-12 shrink-0 rounded-full bg-gradient-to-br from-gold to-bronze text-obsidian flex items-center justify-center hover:brightness-110 transition-all shadow-lg shadow-gold/15" aria-label="Воспроизвести демо: Атмосфера Этерии">
+                  <svg class="icon-play w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg>
+                  <svg class="icon-pause w-5 h-5 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+                </button>
+                <div class="min-w-0 flex-1">
+                  <h4 class="font-display text-xl sm:text-2xl font-semibold text-parchment leading-tight">Атмосфера Этерии</h4>
+                  <p class="text-xs text-ash mt-1">Трейлерный саундтрек, камерные струнные и кинематографические звуковые переходы</p>
+                </div>
+                <div class="hidden sm:flex items-end gap-1 h-8 px-1 shrink-0" aria-hidden="true">
                   <span class="eq-bar w-1 h-full rounded-full bg-gold/80"></span>
                   <span class="eq-bar w-1 h-full rounded-full bg-emberBright/80"></span>
                   <span class="eq-bar w-1 h-full rounded-full bg-goldLight/80"></span>
@@ -881,8 +667,69 @@
                   <span class="eq-bar w-1 h-full rounded-full bg-gold/80"></span>
                 </div>
               </div>
+              <div class="mt-4 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
+                <div class="audio-progress h-full w-0 bg-gradient-to-r from-gold to-emberBright transition-all duration-150"></div>
+              </div>
+              <p class="audio-fallback-note hidden mt-3 text-[11px] sm:text-xs text-goldLight/90 bg-gold/10 border border-gold/25 rounded-lg px-3 py-2 leading-relaxed">
+                Аудио-образец скоро будет загружен — напишите в Telegram, пришлю примеры в чат.
+              </p>
+            </div>
+
+            <!-- Саунд-пример 2 -->
+            <div class="audio-demo-card rounded-xl border border-white/10 hover:border-gold/40 bg-obsidian/85 p-5 transition-colors" data-demo-group="soundDemos" data-audio-key="folkDriveSfx">
+              <div class="flex items-center justify-between gap-2 mb-3">
+                <span class="px-2.5 py-1 rounded-full bg-ember/25 border border-gold/25 text-[11px] font-medium text-goldLight">
+                  Фолк-метал / Исторический драйв
+                </span>
+                <span class="audio-time text-[11px] font-mono text-ash">0:00 / 0:12</span>
+              </div>
+              <div class="flex items-center gap-4">
+                <button type="button" class="audio-play-btn w-12 h-12 shrink-0 rounded-full bg-gradient-to-br from-gold to-bronze text-obsidian flex items-center justify-center hover:brightness-110 transition-all shadow-lg shadow-gold/15" aria-label="Воспроизвести демо: Сведение под ритм и SFX">
+                  <svg class="icon-play w-5 h-5 ml-0.5" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5.14v14l11-7-11-7z"/></svg>
+                  <svg class="icon-pause w-5 h-5 hidden" fill="currentColor" viewBox="0 0 24 24"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+                </button>
+                <div class="min-w-0 flex-1">
+                  <h4 class="font-display text-xl sm:text-2xl font-semibold text-parchment leading-tight">Сведение под ритм и SFX</h4>
+                  <p class="text-xs text-ash mt-1">Пример работы с динамикой, ударными акцентами, звоном стали и энергией кадра</p>
+                </div>
+                <div class="hidden sm:flex items-end gap-1 h-8 px-1 shrink-0" aria-hidden="true">
+                  <span class="eq-bar w-1 h-full rounded-full bg-emberBright/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-goldLight/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-bronze/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-gold/80"></span>
+                  <span class="eq-bar w-1 h-full rounded-full bg-emberBright/80"></span>
+                </div>
+              </div>
+              <div class="mt-4 h-1.5 w-full rounded-full bg-white/10 overflow-hidden">
+                <div class="audio-progress h-full w-0 bg-gradient-to-r from-gold to-emberBright transition-all duration-150"></div>
+              </div>
+              <p class="audio-fallback-note hidden mt-3 text-[11px] sm:text-xs text-goldLight/90 bg-gold/10 border border-gold/25 rounded-lg px-3 py-2 leading-relaxed">
+                Аудио-образец скоро будет загружен — напишите в Telegram, пришлю примеры в чат.
+              </p>
             </div>
           </div>
+        </div>
+
+        <!-- Честная плашка про живых дикторов по отдельному запросу -->
+        <div class="mt-7 rounded-2xl border border-gold/40 bg-gradient-to-r from-[#141115] via-[#171312] to-[#111115] p-6 sm:p-7 flex flex-col lg:flex-row lg:items-center justify-between gap-6 reveal">
+          <div class="flex items-start gap-4">
+            <div class="w-11 h-11 rounded-xl bg-obsidian border border-gold/40 flex items-center justify-center text-goldLight shrink-0 mt-0.5">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 0 0 6-6v-1.5m-6 7.5a6 6 0 0 1-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 0 1-3-3V4.5a3 3 0 1 1 6 0v8.25a3 3 0 0 1-3 3Z"/></svg>
+            </div>
+            <div>
+              <h3 class="font-display text-2xl sm:text-3xl font-semibold text-parchment leading-snug">
+                Живая актёрская озвучка — по отдельному запросу
+              </h3>
+              <p class="mt-2 text-xs sm:text-sm text-ash max-w-2xl leading-relaxed">
+                Студийная AI-озвучка идёт как быстрая и надёжная база. Если вашему проекту нужен именно живой профессиональный диктор или актёр дубляжа — мы также можем организовать запись. Гонорар диктора согласовывается заранее и рассчитывается отдельно сверх базовой сметы продакшна.
+              </p>
+            </div>
+          </div>
+
+          <a data-contact-link="telegramDm" href="https://t.me/YOUR_TELEGRAM_DM" target="_blank" rel="noopener noreferrer" class="shrink-0 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl border border-gold/45 bg-gold/10 text-goldLight text-xs sm:text-sm font-semibold hover:bg-gold hover:text-obsidian transition-all">
+            <span>Обсудить живой голос в Telegram</span>
+            <span>→</span>
+          </a>
         </div>
       </div>
     </section>
@@ -1001,11 +848,11 @@
               <span class="font-semibold text-goldLight whitespace-nowrap">2 500 ₽</span>
             </div>
             <div class="flex items-center justify-between gap-3 py-2.5 border-b border-white/10">
-              <span class="text-parchment/90">Озвучка / сведение живого голоса</span>
+              <span class="text-parchment/90">Студийная AI-озвучка и сведение</span>
               <span class="font-semibold text-goldLight whitespace-nowrap">1 500 ₽ / мин</span>
             </div>
             <div class="flex items-center justify-between gap-3 py-2.5 border-b border-white/10">
-              <span class="text-parchment/90">Саунд-дизайн и музыка</span>
+              <span class="text-parchment/90">Саунд-дизайн и музыкальное оформление</span>
               <span class="font-semibold text-goldLight whitespace-nowrap">2 000 ₽</span>
             </div>
             <div class="flex items-center justify-between gap-3 py-2.5 border-b border-white/10">
@@ -1056,23 +903,15 @@
                 </span>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   <label class="flex items-start gap-3 p-3.5 rounded-xl border border-white/10 bg-obsidian/70 hover:border-gold/40 cursor-pointer transition-colors">
-                    <input type="checkbox" class="calc-addon mt-1 accent-[#d4a359] w-4 h-4 rounded" value="script" data-price="2500" data-label="Сценарий и раскадровка с нуля (+2 500 ₽)" />
+                    <input type="checkbox" id="addon-voice" class="calc-addon mt-1 accent-[#d4a359] w-4 h-4 rounded" value="voice" data-price="1500" data-per-min="true" data-label="Студийная AI-озвучка и сведение" />
                     <span class="text-sm">
-                      <span class="block text-parchment font-medium">Сценарий и раскадровка</span>
-                      <span class="text-xs text-goldLight">+2 500 ₽</span>
-                    </span>
-                  </label>
-
-                  <label class="flex items-start gap-3 p-3.5 rounded-xl border border-white/10 bg-obsidian/70 hover:border-gold/40 cursor-pointer transition-colors">
-                    <input type="checkbox" id="addon-voice" class="calc-addon mt-1 accent-[#d4a359] w-4 h-4 rounded" value="voice" data-price="1500" data-per-min="true" data-label="Озвучка / сведение живого голоса" />
-                    <span class="text-sm">
-                      <span class="block text-parchment font-medium">Озвучка / сведение голоса</span>
+                      <span class="block text-parchment font-medium">Студийная AI-озвучка и сведение</span>
                       <span class="text-xs text-goldLight">+1 500 ₽ / мин</span>
                     </span>
                   </label>
 
                   <label class="flex items-start gap-3 p-3.5 rounded-xl border border-white/10 bg-obsidian/70 hover:border-gold/40 cursor-pointer transition-colors">
-                    <input type="checkbox" class="calc-addon mt-1 accent-[#d4a359] w-4 h-4 rounded" value="sfx" data-price="2000" data-label="Саунд-дизайн и музыка (+2 000 ₽)" />
+                    <input type="checkbox" class="calc-addon mt-1 accent-[#d4a359] w-4 h-4 rounded" value="sfx" data-price="2000" data-label="Саунд-дизайн и музыкальное оформление (+2 000 ₽)" />
                     <span class="text-sm">
                       <span class="block text-parchment font-medium">Саунд-дизайн и музыка</span>
                       <span class="text-xs text-goldLight">+2 000 ₽</span>
@@ -1103,6 +942,15 @@
                     </span>
                   </label>
                 </div>
+
+                <!-- Отдельная опция живого диктора (без накрутки цены — добавляет пометку в заявку) -->
+                <label class="mt-3 flex items-start gap-3 p-3.5 rounded-xl border border-gold/25 bg-obsidian/75 hover:border-gold/50 cursor-pointer transition-colors">
+                  <input type="checkbox" id="calc-live-actor" class="mt-1 accent-[#d4a359] w-4 h-4 rounded" />
+                  <span class="text-sm">
+                    <span class="block text-parchment font-medium">Нужна живая озвучка с диктором</span>
+                    <span class="text-xs text-ash">Рассчитаем гонорар диктора отдельно и добавим пометку в заявку</span>
+                  </span>
+                </label>
 
                 <!-- Блок настройки минут озвучки (показывается, если выбрана озвучка) -->
                 <div id="voice-minutes-wrap" class="hidden mt-3 p-3.5 rounded-xl border border-gold/25 bg-obsidian/80 flex items-center justify-between gap-4">
@@ -1226,6 +1074,15 @@
             <span class="text-goldLight group-hover:translate-x-1 transition-transform">↗</span>
           </a>
         </div>
+
+        <!-- Почта и регион работы -->
+        <div class="mt-7 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6 text-xs sm:text-sm text-ash">
+          <span>Работаю с авторами, музыкантами и брендами по России и СНГ</span>
+          <span class="hidden sm:inline text-gold/40">·</span>
+          <a data-contact-link="email" href="mailto:irinysmith@example.com" class="text-goldLight hover:text-gold transition-colors">
+            <span data-contact-text="email">irinysmith@example.com</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
@@ -1285,7 +1142,7 @@
      * =========================================================================
      * БЛОК БЫСТРОЙ НАСТРОЙКИ ПОРТФОЛИО (МЕНЯЙТЕ ТОЛЬКО ЭТОТ РАЗДЕЛ)
      * =========================================================================
-     * 1. В contacts укажите свой личный Telegram и страницу ВКонтакте.
+     * 1. В contacts укажите свой личный Telegram, страницу ВКонтакте и почту.
      * 2. В videos для каждой работы вставьте:
      *    - embedUrl: ссылку для встраивания из VK Видео (src из кода «Экспортировать»),
      *      ИЛИ ссылку Google Диска вида https://drive.google.com/file/d/ID_ФАЙЛА/preview,
@@ -1293,15 +1150,17 @@
      *    - externalUrl: обычную ссылку на ролик в VK / Google Диске / YouTube.
      *    - posterUrl: путь к вашей картинке-обложке (например "img/shiko.jpg"), если хотите
      *      заменить встроенный кинематографический фон своим кадром.
-     * 3. В audio можно указать прямые пути к .mp3 файлам (например "audio/voice-demo.mp3").
-     *    Пока там пусто, работает встроенное интерактивное тёмно-фэнтезийное аудио-превью.
+     * 3. В voiceDemos и soundDemos укажите пути к .mp3 файлам (например "audio/baritone.mp3").
+     *    Пока ссылка пустая, при нажатии Play звучит мягкое атмосферное превью и показывается
+     *    аккуратная подсказка о том, что образцы можно запросить в Telegram.
      */
     const SITE_CONFIG = {
       contacts: {
         telegramUsername: 'YOUR_TELEGRAM_DM', // Например: 'irinysmith_work' (без @)
         vkUrl: 'https://vk.com/YOUR_VK_ID',
         telegramChannelUrl: 'https://t.me/irinysmithstories',
-        youtubeUrl: 'https://www.youtube.com/@irinysmith'
+        youtubeUrl: 'https://www.youtube.com/@irinysmith',
+        email: 'irinysmith@example.com'       // Укажите рабочую почту (или оставьте пустым '')
       },
 
       videos: {
@@ -1371,9 +1230,18 @@
         }
       },
 
-      audio: {
-        voiceDemo: '', // Вставьте путь к реальному mp3, например: 'audio/voice-demo.mp3'
-        ostDemo: ''    // Вставьте путь к реальному mp3, например: 'audio/ost-demo.mp3'
+      // Образцы студийных AI-голосов (вставьте путь к mp3, например: 'audio/baritone.mp3')
+      voiceDemos: {
+        darkBaritone:    { audioUrl: '', synthPreset: 'baritone' },
+        softFemale:      { audioUrl: '', synthPreset: 'lyrical' },
+        studioAnnouncer: { audioUrl: '', synthPreset: 'studio' },
+        grittyNarrator:  { audioUrl: '', synthPreset: 'gritty' }
+      },
+
+      // Примеры саунд-дизайна и музыкального оформления
+      soundDemos: {
+        ethereaOst:   { audioUrl: '', synthPreset: 'etherea' },
+        folkDriveSfx: { audioUrl: '', synthPreset: 'folk' }
       }
     };
 
@@ -1387,6 +1255,18 @@
       document.querySelectorAll('[data-contact-link="vk"]').forEach(el => el.href = SITE_CONFIG.contacts.vkUrl);
       document.querySelectorAll('[data-contact-link="telegramChannel"]').forEach(el => el.href = SITE_CONFIG.contacts.telegramChannelUrl);
       document.querySelectorAll('[data-contact-link="youtube"]').forEach(el => el.href = SITE_CONFIG.contacts.youtubeUrl);
+
+      document.querySelectorAll('[data-contact-link="email"]').forEach(el => {
+        if (SITE_CONFIG.contacts.email) {
+          el.href = `mailto:${SITE_CONFIG.contacts.email}`;
+          el.classList.remove('hidden');
+        } else {
+          el.classList.add('hidden');
+        }
+      });
+      document.querySelectorAll('[data-contact-text="email"]').forEach(el => {
+        el.textContent = SITE_CONFIG.contacts.email || '';
+      });
 
       Object.entries(SITE_CONFIG.videos).forEach(([key, item]) => {
         // Если задана картинка-обложка, показываем её поверх SVG-арта
@@ -1412,184 +1292,44 @@
     }
 
     // =========================================================================
-    // ВСПЛЫВАЮЩИЕ УВЕДОМЛЕНИЯ (TOAST)
-    // =========================================================================
-    let toastTimer = null;
-    function showToast(message) {
-      const toast = document.getElementById('toast');
-      const msgEl = document.getElementById('toast-msg');
-      if (!toast || !msgEl) return;
-
-      msgEl.textContent = message;
-      toast.classList.remove('opacity-0', 'translate-y-3', 'pointer-events-none');
-      toast.classList.add('opacity-100', 'translate-y-0');
-
-      clearTimeout(toastTimer);
-      toastTimer = setTimeout(() => {
-        toast.classList.add('opacity-0', 'translate-y-3', 'pointer-events-none');
-        toast.classList.remove('opacity-100', 'translate-y-0');
-      }, 3200);
-    }
-
-    // =========================================================================
-    // МОБИЛЬНОЕ МЕНЮ И ПОДСВЕТКА АКТИВНОЙ СЕКЦИИ
-    // =========================================================================
-    function initNavigation() {
-      const btn = document.getElementById('mobile-menu-btn');
-      const drawer = document.getElementById('mobile-drawer');
-      const iconBurger = document.getElementById('icon-burger');
-      const iconClose = document.getElementById('icon-close');
-
-      const toggleDrawer = (forceClose = false) => {
-        const isOpen = !drawer.classList.contains('hidden');
-        const shouldOpen = forceClose ? false : !isOpen;
-        drawer.classList.toggle('hidden', !shouldOpen);
-        iconBurger.classList.toggle('hidden', shouldOpen);
-        iconClose.classList.toggle('hidden', !shouldOpen);
-        btn.setAttribute('aria-expanded', String(shouldOpen));
-      };
-
-      btn.addEventListener('click', () => toggleDrawer());
-      document.querySelectorAll('.mobile-nav-link').forEach(link => {
-        link.addEventListener('click', () => toggleDrawer(true));
-      });
-
-      // Подсветка активной ссылки при скролле
-      const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('.nav-link');
-
-      const spyObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            const id = entry.target.getAttribute('id');
-            navLinks.forEach(link => {
-              link.classList.toggle('active', link.getAttribute('href') === `#${id}`);
-            });
-          }
-        });
-      }, { rootMargin: '-35% 0px -55% 0px' });
-
-      sections.forEach(sec => spyObserver.observe(sec));
-    }
-
-    // =========================================================================
-    // ПЛАВНОЕ ПОЯВЛЕНИЕ СЕКЦИЙ ПРИ СКРОЛЛЕ
-    // =========================================================================
-    function initScrollReveal() {
-      const items = document.querySelectorAll('.reveal');
-      if (!('IntersectionObserver' in window)) {
-        items.forEach(el => el.classList.add('visible'));
-        return;
-      }
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-
-      items.forEach(el => observer.observe(el));
-    }
-
-    // =========================================================================
-    // ВИДЕО-МОДАЛКА (LIGHTBOX) ДЛЯ VK VIDEO / GOOGLE DRIVE / MP4
-    // =========================================================================
-    const videoModal = document.getElementById('video-modal');
-    const modalPlayerBox = document.getElementById('modal-player-box');
-    const modalTitle = document.getElementById('modal-title');
-    const modalTag = document.getElementById('modal-tag');
-    const modalDesc = document.getElementById('modal-desc');
-    const modalExtLink = document.getElementById('modal-ext-link');
-
-    function openVideoModal(videoId) {
-      const item = SITE_CONFIG.videos[videoId];
-      if (!item) return;
-
-      // Останавливаем аудиодемо, если оно играло
-      stopAllAudio();
-
-      modalTitle.textContent = item.title;
-      modalTag.textContent = item.tag;
-      modalDesc.textContent = item.desc;
-
-      if (item.externalUrl) {
-        modalExtLink.href = item.externalUrl;
-        modalExtLink.classList.remove('hidden');
-      } else {
-        modalExtLink.classList.add('hidden');
-      }
-
-      modalPlayerBox.innerHTML = '';
-
-      if (item.embedUrl) {
-        const isDirectVideo = /\.(mp4|webm|ogg)(\?.*)?$/i.test(item.embedUrl);
-        if (isDirectVideo) {
-          const videoEl = document.createElement('video');
-          videoEl.src = item.embedUrl;
-          videoEl.controls = true;
-          videoEl.autoplay = true;
-          videoEl.playsInline = true;
-          videoEl.className = 'w-full h-full object-contain bg-black';
-          modalPlayerBox.appendChild(videoEl);
-        } else {
-          const iframe = document.createElement('iframe');
-          iframe.src = item.embedUrl;
-          iframe.allow = 'autoplay; encrypted-media; fullscreen; picture-in-picture';
-          iframe.allowFullscreen = true;
-          iframe.className = 'w-full h-full border-0';
-          modalPlayerBox.appendChild(iframe);
-        }
-      } else {
-        // Красивая кинематографическая заглушка-подсказка, пока не вставлена ссылка
-        modalPlayerBox.innerHTML = `
-          <div class="w-full h-full flex flex-col items-center justify-center p-6 sm:p-10 text-center bg-gradient-to-br from-[#161215] via-[#0c0b0f] to-[#140e0e]">
-            <div class="w-16 h-16 rounded-full border border-gold/45 bg-gold/10 flex items-center justify-center text-goldLight mb-5">
-              <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m15.75 10.5 4.72-4.72a.75.75 0 0 1 1.28.53v11.38a.75.75 0 0 1-1.28.53l-4.72-4.72M4.5 18.75h9a2.25 2.25 0 0 0 2.25-2.25v-9a2.25 2.25 0 0 0-2.25-2.25h-9A2.25 2.25 0 0 0 2.25 7.5v9a2.25 2.25 0 0 0 2.25 2.25Z"/></svg>
-            </div>
-            <p class="font-display text-2xl sm:text-3xl font-semibold text-parchment">Плеер готов к подключению видео</p>
-            <p class="mt-2.5 text-xs sm:text-sm text-ash max-w-md leading-relaxed">
-              Вставьте ссылку <strong class="text-goldLight">VK Видео</strong>, <strong class="text-goldLight">Google Диска</strong> (<code class="text-parchment/90">/preview</code>) или <strong class="text-goldLight">.mp4</strong> в поле <code class="text-goldLight">SITE_CONFIG.videos.${videoId}.embedUrl</code> — и ролик откроется прямо здесь без VPN.
-            </p>
-            <a href="#contacts" onclick="closeVideoModal()" class="mt-6 inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gradient-to-r from-gold to-bronze text-obsidian font-semibold text-xs sm:text-sm hover:brightness-110 transition-all">
-              Запросить просмотр в Telegram →
-            </a>
-          </div>
-        `;
-      }
-
-      videoModal.classList.remove('hidden');
-      videoModal.classList.add('flex');
-      document.body.style.overflow = 'hidden';
-    }
-
-    function closeVideoModal() {
-      videoModal.classList.add('hidden');
-      videoModal.classList.remove('flex');
-      modalPlayerBox.innerHTML = '';
-      document.body.style.overflow = '';
-    }
-
-    document.querySelectorAll('.video-trigger').forEach(el => {
-      el.addEventListener('click', () => openVideoModal(el.dataset.videoId));
-    });
-    document.getElementById('modal-close').addEventListener('click', closeVideoModal);
-    videoModal.addEventListener('click', (e) => {
-      if (e.target === videoModal) closeVideoModal();
-    });
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && !videoModal.classList.contains('hidden')) closeVideoModal();
-    });
-
-    // =========================================================================
-    // ИНТЕРАКТИВНЫЕ АУДИОДЕМО (РЕАЛЬНЫЙ MP3 ИЛИ WEB AUDIO API ПРЕВЬЮ)
+    // ВИТРИНА ТЕМБРОВ И САУНД-ДЕМО (ВКЛАДКИ + HTML5 AUDIO + WEB AUDIO ПРЕВЬЮ)
     // =========================================================================
     let activeAudioCard = null;
     let activeHtmlAudio = null;
     let webAudioCtx = null;
     let synthStopFn = null;
     let synthTimer = null;
+
+    function formatTimeSec(seconds) {
+      const safe = Math.max(0, Math.floor(seconds || 0));
+      const m = Math.floor(safe / 60);
+      const s = safe % 60;
+      return `${m}:${s < 10 ? '0' : ''}${s}`;
+    }
+
+    function initDemoTabs() {
+      const tabs = document.querySelectorAll('.demo-tab-btn');
+      const panels = document.querySelectorAll('[data-demo-panel]');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const target = tab.dataset.demoTab;
+          tabs.forEach(t => {
+            const isActive = t.dataset.demoTab === target;
+            t.setAttribute('aria-selected', String(isActive));
+            t.className = isActive
+              ? 'demo-tab-btn px-4 py-2.5 rounded-lg text-xs sm:text-sm font-semibold bg-gradient-to-r from-gold to-bronze text-obsidian transition-all'
+              : 'demo-tab-btn px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium text-ash hover:text-parchment transition-all';
+          });
+
+          panels.forEach(panel => {
+            const show = panel.dataset.demoPanel === target;
+            panel.classList.toggle('hidden', !show);
+            panel.classList.toggle('grid', show);
+          });
+        });
+      });
+    }
 
     function stopAllAudio() {
       if (activeHtmlAudio) {
@@ -1607,77 +1347,86 @@
       }
       document.querySelectorAll('.audio-demo-card').forEach(card => {
         card.classList.remove('is-playing');
-        card.querySelector('.icon-play').classList.remove('hidden');
-        card.querySelector('.icon-pause').classList.add('hidden');
-        card.querySelector('.audio-progress').style.width = '0%';
-        card.querySelector('.audio-status').textContent = 'Превью';
+        card.querySelector('.icon-play')?.classList.remove('hidden');
+        card.querySelector('.icon-pause')?.classList.add('hidden');
+        const bar = card.querySelector('.audio-progress');
+        if (bar) bar.style.width = '0%';
+        const timeEl = card.querySelector('.audio-time');
+        if (timeEl) timeEl.textContent = '0:00 / 0:12';
       });
       activeAudioCard = null;
     }
 
-    // Генерация мягкого тёмно-фэнтезийного камерного превью (виолончельный дрон + квинта / факельный эмбиент)
-    function playDarkFantasySynth(type, card) {
+    // Мягкое атмосферное превью через Web Audio API (если mp3-файл ещё не добавлен)
+    function playDarkFantasySynth(preset, card) {
+      const noteEl = card.querySelector('.audio-fallback-note');
+      if (noteEl) noteEl.classList.remove('hidden');
+
       try {
         const AudioCtx = window.AudioContext || window.webkitAudioContext;
         if (!webAudioCtx) webAudioCtx = new AudioCtx();
         if (webAudioCtx.state === 'suspended') webAudioCtx.resume();
 
         const now = webAudioCtx.currentTime;
-        const duration = 12; // 12 секунд атмосферного превью
+        const duration = 12;
         const master = webAudioCtx.createGain();
         master.gain.setValueAtTime(0.0001, now);
-        master.gain.exponentialRampToValueAtTime(0.16, now + 1.4);
-        master.gain.setValueAtTime(0.16, now + duration - 2.0);
+        master.gain.exponentialRampToValueAtTime(0.13, now + 1.2);
+        master.gain.setValueAtTime(0.13, now + duration - 2.0);
         master.gain.exponentialRampToValueAtTime(0.0001, now + duration);
         master.connect(webAudioCtx.destination);
 
         const filter = webAudioCtx.createBiquadFilter();
         filter.type = 'lowpass';
-        filter.frequency.setValueAtTime(type === 'ostDemo' ? 620 : 480, now);
+        filter.frequency.setValueAtTime(preset === 'folk' || preset === 'etherea' ? 680 : 500, now);
         filter.connect(master);
 
+        const presets = {
+          baritone: { chord: [65.41, 98.0, 155.56], melody: [196.0, 233.08, 261.63, 196.0, 155.56] },
+          lyrical:  { chord: [110.0, 164.81, 261.63], melody: [329.63, 392.0, 440.0, 392.0, 329.63] },
+          studio:   { chord: [87.31, 130.81, 220.0], melody: [261.63, 293.66, 329.63, 293.66, 261.63] },
+          gritty:   { chord: [73.42, 110.0, 146.83], melody: [220.0, 233.08, 220.0, 174.61, 146.83] },
+          etherea:  { chord: [73.42, 110.0, 174.61], melody: [293.66, 329.63, 349.23, 293.66, 261.63, 220.0] },
+          folk:     { chord: [82.41, 123.47, 196.0], melody: [246.94, 293.66, 329.63, 293.66, 246.94, 196.0] }
+        };
+        const cfg = presets[preset] || presets.etherea;
+
         const nodes = [];
-        // Аккорд Ре-минор (D2, A2, F3) для тёмно-фэнтезийного звучания
-        const freqs = type === 'ostDemo' ? [73.42, 110.0, 174.61] : [65.41, 98.0, 155.56];
-        freqs.forEach((f, idx) => {
+        cfg.chord.forEach((f, idx) => {
           const osc = webAudioCtx.createOscillator();
           const gain = webAudioCtx.createGain();
           osc.type = idx === 0 ? 'sawtooth' : 'triangle';
           osc.frequency.setValueAtTime(f, now);
-          // Лёгкое живое вибрато смычка
+
           const lfo = webAudioCtx.createOscillator();
           const lfoGain = webAudioCtx.createGain();
-          lfo.frequency.value = 3.2 + idx * 0.4;
-          lfoGain.gain.value = 0.65;
+          lfo.frequency.value = 3.0 + idx * 0.4;
+          lfoGain.gain.value = 0.55;
           lfo.connect(lfoGain);
           lfoGain.connect(osc.frequency);
           lfo.start(now);
 
-          gain.gain.value = idx === 0 ? 0.35 : 0.25;
+          gain.gain.value = idx === 0 ? 0.32 : 0.22;
           osc.connect(gain);
           gain.connect(filter);
           osc.start(now);
           nodes.push(osc, lfo);
         });
 
-        // Медленные камерные ноты лютни / арфы поверх дрона
-        const melody = type === 'ostDemo'
-          ? [293.66, 329.63, 349.23, 293.66, 261.63, 220.0]
-          : [261.63, 293.66, 311.13, 261.63, 196.0];
-        melody.forEach((noteFreq, i) => {
-          const t = now + 1.0 + i * 1.85;
+        cfg.melody.forEach((noteFreq, i) => {
+          const t = now + 0.9 + i * 1.8;
           if (t >= now + duration - 0.8) return;
           const pluck = webAudioCtx.createOscillator();
           const pGain = webAudioCtx.createGain();
           pluck.type = 'sine';
           pluck.frequency.setValueAtTime(noteFreq, t);
           pGain.gain.setValueAtTime(0.0001, t);
-          pGain.gain.exponentialRampToValueAtTime(0.22, t + 0.08);
-          pGain.gain.exponentialRampToValueAtTime(0.0001, t + 1.7);
+          pGain.gain.exponentialRampToValueAtTime(0.18, t + 0.08);
+          pGain.gain.exponentialRampToValueAtTime(0.0001, t + 1.6);
           pluck.connect(pGain);
           pGain.connect(master);
           pluck.start(t);
-          pluck.stop(t + 1.8);
+          pluck.stop(t + 1.7);
           nodes.push(pluck);
         });
 
@@ -1691,23 +1440,23 @@
 
         const startTs = Date.now();
         const bar = card.querySelector('.audio-progress');
-        const statusEl = card.querySelector('.audio-status');
-        statusEl.textContent = 'Звучит превью…';
+        const timeEl = card.querySelector('.audio-time');
 
         synthTimer = setInterval(() => {
           const elapsed = (Date.now() - startTs) / 1000;
           const pct = Math.min(100, (elapsed / duration) * 100);
-          bar.style.width = `${pct}%`;
+          if (bar) bar.style.width = `${pct}%`;
+          if (timeEl) timeEl.textContent = `${formatTimeSec(elapsed)} / ${formatTimeSec(duration)}`;
           if (elapsed >= duration) stopAllAudio();
-        }, 100);
+        }, 120);
       } catch (err) {
-        showToast('Не удалось запустить звук в этом браузере.');
         stopAllAudio();
       }
     }
 
     document.querySelectorAll('.audio-demo-card').forEach(card => {
       const btn = card.querySelector('.audio-play-btn');
+      const group = card.dataset.demoGroup;
       const key = card.dataset.audioKey;
 
       btn.addEventListener('click', () => {
@@ -1717,31 +1466,36 @@
 
         activeAudioCard = card;
         card.classList.add('is-playing');
-        card.querySelector('.icon-play').classList.add('hidden');
-        card.querySelector('.icon-pause').classList.remove('hidden');
+        card.querySelector('.icon-play')?.classList.add('hidden');
+        card.querySelector('.icon-pause')?.classList.remove('hidden');
 
-        const customSrc = SITE_CONFIG.audio[key];
-        if (customSrc) {
-          const audio = new Audio(customSrc);
+        const demoCfg = SITE_CONFIG[group]?.[key] || { audioUrl: '', synthPreset: 'etherea' };
+        const noteEl = card.querySelector('.audio-fallback-note');
+
+        if (demoCfg.audioUrl) {
+          if (noteEl) noteEl.classList.add('hidden');
+          const audio = new Audio(demoCfg.audioUrl);
           activeHtmlAudio = audio;
           const bar = card.querySelector('.audio-progress');
-          const statusEl = card.querySelector('.audio-status');
-          statusEl.textContent = 'Играет…';
+          const timeEl = card.querySelector('.audio-time');
 
           audio.addEventListener('timeupdate', () => {
             if (audio.duration) {
-              bar.style.width = `${(audio.currentTime / audio.duration) * 100}%`;
+              if (bar) bar.style.width = `${(audio.currentTime / audio.duration) * 100}%`;
+              if (timeEl) timeEl.textContent = `${formatTimeSec(audio.currentTime)} / ${formatTimeSec(audio.duration)}`;
             }
           });
           audio.addEventListener('ended', stopAllAudio);
           audio.addEventListener('error', () => {
-            showToast('Аудиофайл не найден — включаю встроенное превью.');
             activeHtmlAudio = null;
-            playDarkFantasySynth(key, card);
+            playDarkFantasySynth(demoCfg.synthPreset, card);
           });
-          audio.play().catch(() => playDarkFantasySynth(key, card));
+          audio.play().catch(() => {
+            activeHtmlAudio = null;
+            playDarkFantasySynth(demoCfg.synthPreset, card);
+          });
         } else {
-          playDarkFantasySynth(key, card);
+          playDarkFantasySynth(demoCfg.synthPreset, card);
         }
       });
     });
@@ -1755,6 +1509,7 @@
     const voiceWrap = document.getElementById('voice-minutes-wrap');
     const voiceMinsInput = document.getElementById('voice-minutes');
     const rushCheckbox = document.getElementById('calc-rush');
+    const liveActorCheckbox = document.getElementById('calc-live-actor');
     const calcTotalEl = document.getElementById('calc-total');
     const calcRushNote = document.getElementById('calc-rush-note');
     const calcSummaryEl = document.getElementById('calc-summary-text');
@@ -1792,6 +1547,7 @@
 
       let subtotal = basePrice + addonsSum;
       const isRush = rushCheckbox.checked;
+      const wantsLiveActor = liveActorCheckbox && liveActorCheckbox.checked;
       const total = isRush ? Math.round((subtotal * 1.4) / 100) * 100 : subtotal;
 
       calcTotalEl.textContent = `от ${formatRub(total)}`;
@@ -1801,8 +1557,9 @@
         'Здравствуйте, Ирина! Хочу обсудить заказ на AI-видео:',
         `Формат: ${formatLabel}`,
         chosenAddons.length ? `Доп. опции:\n${chosenAddons.join('\n')}` : 'Доп. опции: без доп. опций',
+        ...(wantsLiveActor ? ['Живая озвучка: требуется живой диктор (рассчитать гонорар отдельно)'] : []),
         isRush ? 'Сроки: срочный заказ (48 часов, +40%)' : 'Сроки: стандартные',
-        `Ориентировочный бюджет: от ${formatRub(total)}`
+        `Ориентировочный бюджет: от ${formatRub(total)}${wantsLiveActor ? ' (+ гонорар диктора отдельно)' : ''}`
       ];
 
       const summaryText = lines.join('\n');
@@ -1821,6 +1578,7 @@
 
     addonCheckboxes.forEach(cb => cb.addEventListener('change', updateCalculator));
     rushCheckbox.addEventListener('change', updateCalculator);
+    if (liveActorCheckbox) liveActorCheckbox.addEventListener('change', updateCalculator);
     voiceMinsInput.addEventListener('input', updateCalculator);
 
     document.getElementById('voice-minus').addEventListener('click', () => {
@@ -1871,6 +1629,7 @@
       applySiteConfig();
       initNavigation();
       initScrollReveal();
+      initDemoTabs();
       updateCalculator();
     });
   </script>
